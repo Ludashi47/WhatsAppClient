@@ -1,4 +1,4 @@
-package client.view.util;
+package client.util;
 
 
 /**

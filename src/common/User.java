@@ -17,6 +17,9 @@ public class User implements Serializable {
         this.passwd = passwd;
     }
 
+    public User(){
+
+    }
     public String getUserId() {
         return userId;
     }
