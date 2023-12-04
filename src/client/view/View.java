@@ -66,7 +66,7 @@ public class View {
                             }
                         }
                     }else{  //登入失敗
-                        System.out.println("!Failed to login!");
+                        System.out.println("! Incorrect ID or Password !");
                     }
 
                     break;
