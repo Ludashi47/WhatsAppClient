@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b18c77b5-805b-4605-a7aa-2cd69a38feea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/util/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/view/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/service/ManageClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/ClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/ClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/UserClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/UserClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Z26F06l7Yo9VvsNErtKKFI60HV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,8 +43,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/ljx99/Workplace/Java/WhatsApp/Client/src/common",
-    "onboarding.tips.debug.path": "C:/Users/ljx99/Workplace/Java/WhatsApp/Client/src/Main.java"
+    "last_opened_file_path": "C:/work/java/Test/WhatsAppServer",
+    "onboarding.tips.debug.path": "C:/Users/ljx99/Workplace/Java/WhatsApp/Client/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">

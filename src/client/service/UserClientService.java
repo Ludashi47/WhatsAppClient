@@ -23,10 +23,14 @@ public class UserClientService {
 
     //驗證用戶是否合法
     public boolean checkUser(String userId, String userPwd){
+        boolean b = false;  //用於 函數返回
         u.setUserId(userId);
         u.setPasswd(userPwd);
         //連接到伺服器，發送u對象
         try {
+            /*
+            * 與 伺服器 進行連接，驗證用戶合法性
+            * */
             socket = new Socket(InetAddress.getLocalHost(), 9999);
             //得到ObjectOutput對象
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
@@ -35,18 +39,25 @@ public class UserClientService {
             //讀取從伺服端互動的Message對象
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
             Message ms = (Message) ois.readObject();
-            if(ms.getMesType().equals(MessageType.MESSAGE_LOGIN_SUCCEED)){
+            if(ms.getMesType().equals(MessageType.MESSAGE_LOGIN_SUCCEED)){  //成功登入
+                b = true;
                 System.out.println("Login Succeed.");
                 //創建 和伺服器保持聯絡的綫程 -> 創建一個類 ClientConnectServerThread
-                //
+                ClientConnectServerThread ccst = new ClientConnectServerThread(socket);
+                //啟動該綫程:與伺服器一直保持通訊
+                ccst.start();
+                //爲了後續 客戶端的擴展性，將綫程放入集合管理
+                ManageClientConnectServerThread.addClientConnectServerThread(userId, ccst);
 
             }else {
                 System.out.println("Login failed.");
+                //關閉socket
+                socket.close();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
-        return true;
+        return b;
    }
 }

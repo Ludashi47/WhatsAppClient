@@ -1,5 +1,6 @@
 package client.view;
 
+import client.service.UserClientService;
 import client.util.Utility;
 
 /**
@@ -8,6 +9,7 @@ import client.util.Utility;
 public class View {
     private boolean loop = true;    //控制是否顯示菜單
     private String key = "";    //接收鍵盤輸入
+    private UserClientService ucs = new UserClientService();    //用於登入伺服器
 
     public static void main(String[] args) {
         new View().mainMenu();
@@ -30,10 +32,9 @@ public class View {
                     System.out.print("Enter userPwd: ");
                     String userPwd = Utility.readString(50);
 
-                    //此處驗證用戶合法性
+                    //此處要到伺服器端驗證用戶合法性
                     //編寫UserClientService
-
-                    if(true){   //登入成功
+                    if(ucs.checkUser(userId,userPwd)){   //登入成功
                         //對id和pwd進行驗證之後
                         System.out.println("================Welcome "+ userId+" ================");
                         //進入二級菜單
